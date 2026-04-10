@@ -1,6 +1,8 @@
-# How It Works
+# 🔄 How It Works
 
-BaseTrove operates through three interconnected systems that reinforce each other continuously.
+BaseTrove is built on a single relentless mechanic: **burn supply, fill the Vault, repeat — faster every time.**
+
+Three systems drive this flywheel simultaneously, each one feeding the others.
 
 ---
 
@@ -8,45 +10,35 @@ BaseTrove operates through three interconnected systems that reinforce each othe
 
 ### 1. The Vault
 
-The Vault is a smart contract that holds ETH and backs $TROVE with a guaranteed price floor.
-
-The floor price is always:
+A smart contract holding ETH. The floor price is always:
 ```
 Price Floor = Total ETH in Vault ÷ Circulating $TROVE Supply
 ```
 
-Any $TROVE holder can sell their tokens directly to the Vault at this price at any time — no slippage, no market impact. When they do, those tokens are **permanently burned**, reducing supply and raising the floor price for everyone remaining.
+ETH fills the Vault from two directions at once: mining revenue deposits and swap fees from every trade. Supply shrinks from buyback burns and Vault sales. Both movements raise the floor — and they compound on each other.
 
-The Vault's ETH balance grows from two sources:
-- **50% of all miner revenue** deposited directly
-- **Swap taxes** from $TROVE trades on the DEX pools
-
-The Vault's ETH balance never decreases except to pay out sellers. And as supply shrinks from burns, the floor per token rises even without new ETH coming in.
+The fewer tokens remain, the faster each new ETH deposit moves the floor. **The system accelerates as it runs.**
 
 ---
 
 ### 2. The Mining Engine
 
-A fleet of solar-powered ASIC miners runs 24/7, generating Bitcoin mining revenue from pure sunlight and battery storage. This revenue is converted to ETH on Base and split:
+Solar-powered ASIC miners run 24/7, profit-switching between Bitcoin, Zcash, Ethereum Classic, and other Proof-of-Work coins to always maximize revenue. All earnings convert to ETH on Base and split:
 
-- **50% → Vault** — floor price rises
-- **50% → Buyback** — $TROVE is purchased from one of the two DEX pools and permanently burned
+- **50% → Vault** — floor rises immediately
+- **50% → Buyback** — TROVE bought from a random LP, burned forever
 
-The key insight: **this happens regardless of whether anyone is trading $TROVE.** The floor rises even on days with zero volume. The supply shrinks even in a bear market.
+This happens regardless of market conditions. No trading volume required. The floor rises and supply shrinks even in a bear market, even on days with zero community activity.
 
 ---
 
 ### 3. Dual LP Arbitrage
 
-$TROVE has liquidity in two pools simultaneously:
-- **TROVE/USDC**
-- **TROVE/ETH**
+Two live liquidity pools: **TROVE/USDC** and **TROVE/ETH** on Uniswap v2.
 
-When the mining engine executes a buyback on one pool, it creates a price discrepancy between the two. Arbitrage bots — automated programs that scan for price gaps — immediately step in to correct it by buying on the cheaper pool and selling on the more expensive one.
+Every buyback creates a price gap between pools. Arbitrage bots close it within milliseconds — and every arb trade generates swap fees that flow into the Vault. One buyback triggers a cascade of volume the protocol didn't have to pay for.
 
-Every arb trade generates swap taxes. Those taxes flow into the Vault. More arb volume = more ETH in Vault = higher floor price.
-
-The buyback target pool is **selected randomly** on each execution to prevent front-running and maximize arb activity.
+The buyback pool is randomly selected each time, preventing front-running and keeping both pools perpetually active.
 
 ---
 
@@ -55,27 +47,48 @@ The buyback target pool is **selected randomly** on each execution to prevent fr
 ```
 ☀️  Solar Energy
       ↓
-⛏️  ASIC Miners generate BTC revenue
+⛏️  ASIC Miners (profit-switch: BTC / ZEC / ETC / ...)
       ↓
    Convert to ETH on Base
       ↓
-   ┌──────────────────────────┐
-   │  50%          50%        │
-   ↓                ↓
-🏦 Vault        🔥 Buyback from LP
-   (ETH up)        (TROVE burned)
-      ↓                ↓
-   Floor rises    Supply shrinks
-                       ↓
-              ⚖️  Price gap opens between pools
-                       ↓
-              🤖  Arb bots trade to close gap
-                       ↓
-              💰  Swap taxes → Vault
-                       ↓
-              Floor rises (again)
+   ┌─────────────────────────┐
+  50%                       50%
+   ↓                         ↓
+🏦 Vault               🔥 Buyback from random LP
+   (ETH up)                (TROVE burned)
+      ↓                         ↓
+  Floor rises            Supply shrinks
+      ↓                         ↓
+  Each future burn     Each future deposit
+  hits harder  ←———→  hits harder
+      ↓
+  ⚖️ Price gap opens between pools
+      ↓
+  🤖 Arb bots trade to close gap
+      ↓
+  💰 Swap fees (2–5%) → 50% Vault · 50% Team
+      ↓
+  Team reinvests → more miners → more revenue
+      ↓
+  🔁 Flywheel spins faster
 ```
 
-Each revolution of this flywheel leaves $TROVE with a higher floor, lower supply, and more ETH backing every token.
+Every revolution: higher floor, lower supply, more ETH per token. And each revolution is faster than the last.
+
+---
+
+## Multiple Utilities, One Direction
+
+BaseTrove's floor price is powered by multiple independent revenue streams — not one:
+
+| Utility | What it does |
+|---|---|
+| ASIC Mining | Buybacks + Vault deposits, 24/7, market-independent |
+| Swap Fees | 50% to Vault on every trade |
+| Arbitrage Bots | Free volume → more fees → more Vault ETH |
+| Vault Sales | Burns supply → floor rises, ETH paid out |
+| Future Tech | Additional revenue streams added to the same flywheel over time |
+
+Any one of these alone would be a reasonable deflationary mechanic. Together, compounding on a supply of 1,000 tokens, they create an accelerating system where the floor price rising is not a goal — it's a mathematical certainty.
 
 > Deep dive: [The Vault](the-vault.md) · [Dual LP](dual-lp.md) · [Arbitrage Engine](arbitrage.md)

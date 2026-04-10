@@ -1,12 +1,12 @@
-# Buyback & Burn Mechanism
+# 🔥 Buyback & Burn Mechanism
 
-The buyback engine is the mechanism through which mining revenue is converted into permanent supply reduction and Vault growth for $TROVE.
+The buyback engine converts mining revenue into permanent supply reduction — feeding directly into the Vault's compounding acceleration effect.
 
 ---
 
 ## The Split
 
-Every time mining revenue is deployed, it is split automatically by the smart contract:
+Every mining revenue cycle is split automatically:
 
 ```
 Mining Revenue (ETH)
@@ -14,66 +14,72 @@ Mining Revenue (ETH)
    ┌────┴────┐
   50%       50%
    ↓         ↓
- Vault    Buyback
+ Vault    Buyback & Burn
 ```
 
 **50% → Vault**
-ETH is deposited directly into the Vault contract. This immediately raises the price floor:
+ETH deposited directly. Floor rises immediately.
 ```
-New Floor = (Previous ETH + New ETH) ÷ Circulating Supply
+New Floor = (Vault ETH + New ETH) ÷ Circulating Supply
 ```
 
 **50% → Buyback & Burn**
-ETH/USDC is used to purchase $TROVE from one of the two liquidity pools. The purchased $TROVE is immediately and permanently burned.
+ETH used to purchase TROVE from a randomly selected pool. The purchased TROVE is permanently burned — removing it from the circulating supply forever.
+
+---
+
+## Why the Burn Accelerates the Vault
+
+This is the core compounding mechanic.
+
+When TROVE is burned, the supply shrinks. The same ETH already sitting in the Vault now backs fewer tokens — so the floor price rises **without any new ETH entering.** Then when the next mining deposit arrives, it's divided among even fewer tokens, moving the floor further than the last deposit did.
+
+```
+Burn → fewer tokens → same ETH hits harder
+         ↓
+Next deposit → moves floor further than before
+         ↓
+Next burn → even fewer tokens → next deposit hits even harder
+         ↓
+         ...accelerates indefinitely
+```
+
+The more TROVE gets burned, the faster the floor loads up. **The system is designed to compound on itself.**
 
 ---
 
 ## Random Pool Selection
 
-Each buyback execution randomly selects between Pool A (TROVE/USDC) and Pool B (TROVE/ETH).
+Each buyback randomly selects between Pool A (TROVE/USDC) and Pool B (TROVE/ETH).
 
-**Why random?**
-
-If the buyback always targeted the same pool, sophisticated MEV bots and front-runners would position ahead of every buyback, extracting value from the protocol before the purchase executes. Randomness eliminates this predictability.
-
-The randomness also ensures both pools see regular buyback pressure, keeping arbitrage activity balanced across the full liquidity ecosystem.
+- Prevents MEV bots and front-runners from positioning ahead of known buybacks
+- Keeps both pools under continuous buyback pressure
+- Forces arbitrage activity across both pools unpredictably
 
 ---
 
 ## Execution Frequency
 
-Thanks to Base's near-zero gas fees, buybacks execute **daily** or more frequently depending on mining revenue accumulation. There is no minimum threshold that needs to be reached before deployment — small amounts can be efficiently deployed as they arrive.
-
-Compare this to Ethereum mainnet, where gas costs would demand batching revenue for days or weeks before execution makes economic sense.
+Base chain's sub-cent gas fees mean buybacks deploy as revenue arrives — daily or more. No batching required. Small amounts hit the market frequently rather than large amounts hitting infrequently, which creates more consistent arb activity and smoother floor growth.
 
 ---
 
-## The Burn
+## Profit-Switching
 
-$TROVE purchased in buybacks is sent to a dead address (`0x000...dEaD`) — permanently removing it from circulation. These tokens can never be recovered, unstaked, or re-introduced to supply.
+The miners don't just mine Bitcoin. They automatically switch to whichever Proof-of-Work coin is most profitable at any given time — Bitcoin, Zcash, Ethereum Classic, or others. All earnings convert to ETH on Base before deployment.
 
-Each burn:
-1. Reduces circulating supply
-2. Increases the ETH-per-token ratio in the Vault (same ETH ÷ fewer tokens = higher floor)
-3. Creates a price gap between the two pools (triggering arb)
-
-The cumulative burn total is displayed on the BaseTrove DApp in real time.
+This means buyback revenue is always maximized, regardless of which coin is performing best in the market.
 
 ---
 
-## Buyback Cadence Example
+## Cadence Example
 
-Assume the mining fleet generates 0.5 ETH/day:
+Assume the mining fleet generates 0.5 ETH/day at steady state:
 
 | Allocation | Amount | Effect |
 |---|---|---|
-| Vault deposit | 0.25 ETH | Floor price rises |
-| Buyback | 0.25 ETH | ~X TROVE purchased + burned |
-| Arb volume triggered | ~0.5–1.5× of buyback | Additional taxes → Vault |
+| Vault deposit | 0.25 ETH | Floor rises |
+| Buyback | 0.25 ETH | TROVE purchased + burned |
+| Arb volume triggered | ~0.5–1.5× buyback size | Additional fees → Vault |
 
-Over 30 days at this rate:
-- **7.5 ETH** added to Vault
-- Supply reduced by accumulated burns
-- Floor price significantly higher than day 0
-
-Over time, if mining revenue grows (hardware expansion) or BTC price rises, this cadence accelerates.
+Over 30 days: ~7.5 ETH added to Vault, supply meaningfully compressed, floor accelerating upward. As hardware expands with reinvested fee revenue, this cadence increases — more miners, more buybacks, faster burns.

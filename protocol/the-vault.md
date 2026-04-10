@@ -1,6 +1,6 @@
-# The Vault
+# 🏦 The Vault
 
-The Vault is the backbone of BaseTrove. It is a smart contract that holds ETH and guarantees every $TROVE holder a minimum redemption price — at all times, unconditionally.
+The Vault is the backbone of BaseTrove. A smart contract that holds ETH and guarantees every $TROVE holder a minimum redemption price — at all times, unconditionally.
 
 ---
 
@@ -10,74 +10,77 @@ The Vault is the backbone of BaseTrove. It is a smart contract that holds ETH an
 Price Floor = Total ETH in Vault ÷ Circulating $TROVE Supply
 ```
 
-This is the minimum price at which anyone can sell $TROVE, directly to the Vault, at any time.
-
-**Example:**
-- Vault holds 10 ETH
-- 5,000 $TROVE in circulation
-- Price floor = **0.002 ETH per TROVE**
-
-If 500 TROVE are sold to the Vault and burned:
-- Vault pays out 1 ETH (500 × 0.002)
-- Vault holds 9 ETH
-- 4,500 TROVE in circulation
-- New floor = 9 ÷ 4,500 = **0.002 ETH per TROVE**
-
-The floor price stays the same after a sale — it only rises when new ETH enters the Vault without a corresponding increase in supply.
+This is the minimum price at which anyone can sell $TROVE directly to the Vault, at any time, with zero fees.
 
 ---
 
-## What Grows the Vault
+## The Compounding Acceleration Effect
 
-Three revenue streams continuously add ETH to the Vault:
+This is the core mechanic that makes BaseTrove different from every other deflationary token.
+
+Every burn reduces the number of tokens that need to divide the ETH in the Vault. So the floor price doesn't just rise — it **rises faster over time.**
+
+**Example:**
+
+| Event | Vault ETH | Supply | Floor |
+|---|---|---|---|
+| Start | 1 ETH | 1,000 | 0.001 ETH |
+| +0.1 ETH deposited | 1.1 ETH | 1,000 | 0.0011 ETH (+10%) |
+| 100 TROVE burned | 1.1 ETH | 900 | 0.00122 ETH (+11%) |
+| +0.1 ETH deposited | 1.2 ETH | 900 | 0.00133 ETH (+9%) |
+| 100 TROVE burned | 1.2 ETH | 800 | 0.0015 ETH (+12.7%) |
+| +0.1 ETH deposited | 1.3 ETH | 800 | 0.001625 ETH (+8.3%) |
+
+The same ETH deposit that moved the floor 10% at 1,000 supply moves it **further** at 800 supply — and further still at 500, 300, 100. As the supply compresses, every new ETH deposit hits harder. Every burn makes the next burn more powerful.
+
+**The Vault loads up faster the more tokens get burned.**
+
+---
+
+## What Fills the Vault
 
 | Source | Description |
 |---|---|
-| **Mining Revenue (50%)** | Half of all solar miner earnings, deposited on every cycle |
-| **Buy Tax (1.5%)** | Applied to every $TROVE purchase on the DEX |
-| **Sell Tax (1.5%)** | Applied to every $TROVE sale on the DEX |
+| **Mining Revenue (50%)** | Half of all ASIC miner earnings, deposited on every cycle |
+| **Swap Fee (50% of 2–5%)** | Half of every DEX trade fee, flowing in continuously |
+| **Arb Bot Volume** | Every arbitrage trade between the two pools generates fees → Vault |
 
-No ETH is ever removed from the Vault except to pay out token holders who sell to it. The Vault does not pay salaries, fund operations, or cover marketing. It exists solely for holders.
+The Vault never pays salaries, operations, or marketing. It exists solely to back $TROVE holders.
 
 ---
 
-## What Grows the Floor Price
+## What Burns Supply
 
-The floor price rises whenever:
+Every burn is a one-way door. Burned tokens are gone forever, and the ETH in the Vault now needs to be divided among fewer tokens.
 
-1. **ETH enters the Vault** (mining deposits, swap taxes)
-2. **$TROVE is burned** (via buybacks or DApp sales) — same ETH now backs fewer tokens
+| Event | Burns |
+|---|---|
+| Mining buyback | ETH buys TROVE from LP → burned |
+| Vault sale (DApp) | Holder sells TROVE to Vault → burned, ETH paid out |
 
-Because both happen continuously and simultaneously, the floor price has a **structural upward bias** that does not depend on market price, sentiment, or volume.
+Both happen continuously. The total burned counter grows every day, and each new burn accelerates the floor price rise for everyone remaining.
 
 ---
 
 ## Selling to the Vault
 
-Any $TROVE holder can sell directly to the Vault at the current floor price via the BaseTrove DApp:
+Any holder can sell $TROVE to the Vault at the guaranteed floor price via the DApp:
 
-1. Connect your wallet on Base
-2. Enter the amount of $TROVE to sell
-3. Receive ETH instantly at the guaranteed floor price
-4. Your $TROVE tokens are permanently burned
+1. Connect wallet on Base
+2. Enter amount of TROVE to sell
+3. Receive ETH at the current floor price — instantly, no slippage
+4. Your TROVE is permanently burned
 
-There are **no taxes on Vault sales** — you receive the full floor price in ETH.
+**Zero fees on Vault sales.** You receive the full floor price in ETH.
 
-> Note: The floor price is a *minimum*. $TROVE will typically trade above floor on the open market due to speculation and premium. Selling to the Vault is only optimal when the DEX price has fallen below floor — which is when the arbitrage mechanism kicks in.
+> The floor price is a *minimum*. $TROVE typically trades above floor on the open market. Selling to the Vault is most relevant when DEX price falls near or below floor — which is when the arb mechanism kicks in to correct it.
 
 ---
 
-## Why the Floor Can Only Go Up
+## Why the Floor Never Goes Down
 
-Even on a day with zero trading activity:
-- Mining revenue continues depositing ETH into the Vault
-- Supply stays constant (no one selling to the Vault = no burns)
-- Floor price increases: more ETH ÷ same supply
+The floor can only stay flat or rise. It stays flat only if:
+- No ETH enters the Vault (mining stops AND no trading)
+- No TROVE is burned
 
-And on active trading days:
-- Swap taxes add ETH to the Vault
-- Buybacks reduce supply
-- Arb bot activity further adds to taxes
-- Floor price increases faster
-
-**There is no mechanism that reduces the floor price.** It only ever goes up.
+Both conditions simultaneously is effectively impossible while miners are running. In practice, **the floor rises every single day.**
