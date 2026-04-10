@@ -1,75 +1,67 @@
-# Security
+# 🛡️ Security
 
 ---
 
 ## Smart Contract Audit
 
-The BaseTrove smart contracts (Vault, ERC-20, Buyback Engine) are audited by an independent security firm prior to launch. The full audit report is published publicly and linked here at launch.
+The BaseTrove smart contracts are audited by an independent security firm before launch. The full report is published publicly.
 
 > Audit report: **[Published at launch]**
 
-An audit reduces risk but does not eliminate it. Even audited contracts can have vulnerabilities. Never invest more than you can afford to lose.
+An audit reduces risk — it does not eliminate it. Never invest more than you can afford to lose.
 
 ---
 
 ## Contract Architecture
 
-BaseTrove consists of three core contracts:
-
 | Contract | Function |
 |---|---|
-| **TROVE Token** | ERC-20 with 3% DEX tax routing |
+| **TROVE Token** | ERC-20 with dynamic 2–5% DEX fee routing |
 | **Vault** | Holds ETH, calculates floor price, processes burns |
 | **Buyback Engine** | Receives mining revenue, splits 50/50, executes random LP buys |
 
-All contracts are verified and published on Basescan. Source code is readable by anyone.
+All contracts are verified and open-source on Basescan.
 
 ---
 
 ## What the Team Can and Cannot Do
 
-### Cannot do (non-upgradeable):
+### Cannot do (immutable):
 - Withdraw ETH from the Vault
 - Change the floor price formula
-- Increase the tax rate
 - Mint new $TROVE tokens
 - Modify buyback logic
+- Set fee above the on-chain maximum
 
 ### Can do (operational):
-- Update marketing wallet address (for operational flexibility)
+- Adjust swap fee within the allowed range
+- Update the development wallet address
 - Pause the DApp frontend (not the contracts)
 - Execute mining revenue deposits
 
-The core financial mechanics are immutable once deployed.
+The Vault and its ETH are untouchable by anyone, including the team.
 
 ---
 
 ## Liquidity Lock
 
-Initial liquidity in both pools is locked via a third-party locker for a minimum of **12 months** from launch.
+Both Uniswap v2 pools are locked via a third-party locker for a minimum of **12 months** from launch. Verifiable on-chain.
 
-Lock proof: **[Published at launch]**
-
-The team cannot remove liquidity or rug-pull the pools during this period.
+> Lock proof: **[Published at launch]**
 
 ---
 
-## Team Token Lock
+## No Team Tokens
 
-Team allocation (1,000 TROVE) is locked in a vesting contract:
-- 6-month cliff (0 tokens available)
-- 24-month linear vesting starting at month 6
-- Deployed on-chain, verifiable on Basescan
+There are no team tokens to lock, vest, or dump. Zero. The team's only financial interest in $TROVE is through swap fee revenue — the same mechanism that benefits the Vault and all holders.
 
 ---
 
 ## Responsible Disclosure
 
-If you discover a security vulnerability in BaseTrove's smart contracts or DApp, please report it privately before public disclosure:
+Found a vulnerability? Contact us privately before going public:
 
 > Security contact: **[Published at launch]**
-
-We take security reports seriously and will acknowledge and address valid findings promptly.
 
 ---
 
@@ -78,9 +70,10 @@ We take security reports seriously and will acknowledge and address valid findin
 | Risk | Mitigation |
 |---|---|
 | Smart contract bug | Independent audit, conservative architecture |
-| Mining hardware failure | Redundant hardware, battery backup |
-| BTC price collapse | Protocol functions at any BTC price; lower revenue, not zero |
-| Liquidity thin periods | Floor price provides hard support; arb mechanism keeps pools active |
-| Regulatory | Legal review of token structure; operating in compliant jurisdictions |
+| Mining hardware failure | Redundant units, battery backup for 24/7 uptime |
+| Mining coin price decline | Profit-switching to most profitable algorithm at all times |
+| Liquidity thin periods | Vault floor provides hard support; arb bots keep pools active |
+| Fee set too high | Team incentivized to keep fees reasonable — high fees kill volume and team revenue |
+| Regulatory | Operating in compliant jurisdictions; legal review of token structure |
 
-No investment is without risk. BaseTrove is designed to minimize protocol-level risk through transparency and immutability, but market and operational risks remain.
+No project is risk-free. BaseTrove is built to minimize protocol-level risk through immutability and transparency — but market and operational risks remain.
