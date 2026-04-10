@@ -16,9 +16,12 @@ Every token that gets burned raises the ETH floor price for every remaining $TRO
 |---|---|
 | **Token** | $TROVE |
 | **Chain** | Base (Ethereum L2) |
-| **Total Supply** | 10,000 TROVE |
+| **Total Supply** | 1,000 TROVE |
+| **Launch** | 100% Fair Launch — no team tokens |
+| **DEX** | Uniswap v2 on Base |
 | **Vault Asset** | ETH |
 | **Liquidity Pools** | TROVE/USDC · TROVE/ETH |
+| **Swap Fee** | 2–5% (dynamic) |
 | **Buyback Engine** | Solar ASIC Miners (24/7) |
 | **Burns** | Permanent — tokens burned are gone forever |
 
@@ -35,6 +38,15 @@ Solar Miners → Revenue
   Circulating supply decreases
   Vault ETH per token increases
   Price floor rises — forever
+```
+
+Swap fees add a second revenue stream into the Vault on top of mining:
+
+```
+Every DEX swap → 2–5% fee
+        ↓
+  50% → Vault
+  50% → Team & Dev (reinvested into more miners)
 ```
 
 The price floor for $TROVE in the Vault is calculated as:

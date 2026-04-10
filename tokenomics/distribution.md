@@ -1,6 +1,6 @@
-# Distribution
+# 🪙 Distribution
 
-$TROVE launches with a fair distribution. There are no private sales, no VC allocations, no team vesting schedules, and no pre-mine.
+$TROVE is a 100% fair launch. No private sales. No team allocation. No VC bags. No pre-mine. Every single token enters circulation through public liquidity from day one.
 
 ---
 
@@ -8,47 +8,42 @@ $TROVE launches with a fair distribution. There are no private sales, no VC allo
 
 | Allocation | Percentage | TROVE | Notes |
 |---|---|---|---|
-| **Uniswap Liquidity** | 90% | 9,000 | Paired with ETH + USDC at launch |
-| **Team / Operations** | 10% | 1,000 | Locked — see vesting below |
+| **TROVE/USDC Pool** | 50% | 500 | Uniswap v2 on Base |
+| **TROVE/ETH Pool** | 50% | 500 | Uniswap v2 on Base |
+
+That's it. 1,000 TROVE. 100% in liquidity. Nothing held back.
 
 ---
 
 ## Initial Liquidity
 
-90% of supply (9,000 TROVE) is paired with initial liquidity and launched publicly on Base DEXes simultaneously across both pools:
+Both pools are seeded simultaneously at launch on **Uniswap v2 on Base**:
 
-- **Pool A:** 4,500 TROVE + USDC
-- **Pool B:** 4,500 TROVE + ETH
+- **Pool A:** 500 TROVE + USDC
+- **Pool B:** 500 TROVE + ETH
 
-Liquidity is **locked** at launch for a minimum of 12 months via a third-party locker. The community can verify the lock on-chain at any time.
+Liquidity is **locked** at launch via a third-party locker. The community can verify the lock on-chain at any time.
 
-There is no "pre-sale" price advantage. The first buyers on the open market pay the same Uniswap price as everyone else.
-
----
-
-## Team Allocation
-
-The 10% team allocation (1,000 TROVE) exists to fund ongoing development, smart contract maintenance, mining operations overhead, and community growth.
-
-**Vesting schedule:**
-- 0% at launch (cliff)
-- Linear unlock over 24 months starting 6 months post-launch
-- Fully unlocked at month 30
-
-This means the team cannot dump on holders at launch and is financially incentivized to grow the protocol over the long term. If $TROVE's floor price is higher in 24 months, the team's allocation is worth more — their incentives are perfectly aligned with holders.
+The first buyer on the open market gets the exact same price as everyone else. No whitelist, no presale advantage, no insider allocation.
 
 ---
 
-## No Hidden Wallets
+## No Team Tokens
 
-The team allocation wallet will be publicly disclosed at launch. There are no additional wallets, no advisor allocations, no influencer bags, and no "ecosystem fund" that could be used as a disguised team allocation.
+The team holds zero $TROVE at launch. Revenue for development, smart contract maintenance, mining infrastructure, and operations comes entirely from the **team's share of swap fees** — not from a pre-allocated token bag.
 
-What you see above is the complete picture.
+This means the team's financial interests are identical to every holder: the protocol needs to generate volume and grow the Vault. There is no team dump waiting to happen.
 
 ---
 
-## Vault Seeding
+## How the Team Gets Paid
 
-At launch, the Vault is seeded with an initial ETH deposit by the team to establish a non-zero floor price from day one. This ETH is **not** taken from the token supply — it is a direct ETH contribution from the team to the Vault contract.
+50% of every swap fee (ranging 2–5%, adjusted based on market conditions) goes to the team and development fund. This covers:
 
-The initial Vault seed amount and the resulting day-one floor price will be disclosed in the launch announcement.
+- Smart contract development and maintenance
+- Security audits
+- ASIC miner procurement and expansion
+- Solar panel and battery infrastructure
+- Community and marketing
+
+As the protocol grows and generates more fee revenue, more gets reinvested into additional mining hardware — increasing the buyback pressure on $TROVE and growing the Vault faster.

@@ -1,6 +1,6 @@
-# Token Supply
+# 📊 Token Supply
 
-$TROVE has a fixed, small, and intentionally scarce supply. Scarcity is not a marketing claim — it is enforced by the smart contract with no mint function.
+$TROVE has a fixed, intentionally extreme supply. No mint function exists — the supply is set at deployment and can only decrease from that point forward.
 
 ---
 
@@ -8,52 +8,48 @@ $TROVE has a fixed, small, and intentionally scarce supply. Scarcity is not a ma
 
 | Property | Value |
 |---|---|
-| **Total Supply** | 10,000 TROVE |
-| **Mintable** | No — supply is fixed at deployment |
+| **Total Supply** | 1,000 TROVE |
+| **Mintable** | No — fixed at deployment |
 | **Burnable** | Yes — burned tokens are permanently removed |
 | **Effective Supply** | Decreases over time, never increases |
 
 ---
 
-## Why 10,000?
+## Why 1,000?
 
-The supply size is chosen to make the **Vault price floor mathematically meaningful** from a small ETH base.
+1,000 TROVE is extreme scarcity by design. With such a small supply, every single burn and every ETH deposit into the Vault has an **immediate, visible impact** on the floor price.
 
-With 10,000 TROVE and an initial Vault seeding of 5 ETH:
+With 1,000 TROVE and 1 ETH in the Vault:
 ```
-Initial floor = 5 ETH ÷ 10,000 = 0.0005 ETH per TROVE
+Floor = 1 ETH ÷ 1,000 = 0.001 ETH per TROVE
 ```
 
-As mining revenue deposits ETH and buybacks reduce supply:
-- 1,000 TROVE burned → 9,000 remaining → floor rises ~11% (same ETH)
-- 1 ETH added to Vault → floor rises 11% (same supply)
-- Both happen simultaneously
+After 100 TROVE burned from buybacks:
+```
+Floor = 1 ETH ÷ 900 = 0.00111 ETH per TROVE  (+11%)
+```
 
-Small supply means each individual burn and each ETH deposit has a **visible, material impact** on the floor price. Holders can directly observe their holdings becoming more backed with each cycle.
+There's no hiding dilution behind large numbers. Every burn is felt.
 
 ---
 
 ## Supply Trajectory
 
-Supply is designed to only decrease. The following actions reduce it permanently:
+Supply only ever decreases through:
 
-1. **Mining buybacks** — $TROVE purchased from LP and burned to dead address
-2. **DApp sales** — holders sell $TROVE to the Vault; tokens are burned
-3. **No new issuance** — no staking rewards, no vesting unlocks, no new mints
-
-Over a 12-month horizon, the combination of daily buybacks and organic Vault selling will meaningfully compress the circulating supply, continuously raising the floor price.
+1. **Mining buybacks** — ASIC revenue buys TROVE from LP and sends it to the dead address
+2. **Vault sales (DApp)** — holders sell TROVE to the Vault at floor price; tokens are permanently burned
+3. **No new issuance** — no team allocation, no staking rewards, no future mints
 
 ---
 
-## Supply vs Floor Price Relationship
-
-The relationship between supply reduction and floor price is non-linear. The fewer tokens remain, the greater the impact of each additional burn:
+## Supply vs Floor Price
 
 | Circulating Supply | Vault ETH | Floor Price |
 |---|---|---|
-| 10,000 | 10 ETH | 0.001 ETH |
-| 8,000 | 12 ETH | 0.0015 ETH |
-| 5,000 | 15 ETH | 0.003 ETH |
-| 2,000 | 20 ETH | 0.01 ETH |
+| 1,000 | 1 ETH | 0.001 ETH |
+| 800 | 1.5 ETH | 0.001875 ETH |
+| 500 | 2.5 ETH | 0.005 ETH |
+| 200 | 4 ETH | 0.02 ETH |
 
-As supply approaches zero and ETH continues accumulating, the floor price per token grows asymptotically. Early holders benefit most from holding through supply compression.
+As supply compresses and ETH accumulates from swap fees and mining revenue, the floor price per token grows significantly. Early holders benefit most from staying through the compression.

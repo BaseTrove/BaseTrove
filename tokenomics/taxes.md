@@ -1,60 +1,62 @@
-# Taxes & Fees
+# 💸 Taxes & Fees
 
-$TROVE has a simple, low tax structure applied to DEX trades. All taxes flow directly to the Vault or fund operations — there is no staking pool, no reflection, and no complexity.
+$TROVE uses a dynamic swap fee that the team adjusts manually based on market conditions. All fees are split evenly between the Vault and the team development fund — no staking pools, no reflections, no complexity.
 
 ---
 
-## Tax Structure
+## Fee Structure
 
-| Transaction | Total Tax | Vault | Marketing |
+| Transaction | Fee | Vault | Team & Dev |
 |---|---|---|---|
-| **Buy on DEX** | 3% | 1.5% | 1.5% |
-| **Sell on DEX** | 3% | 1.5% | 1.5% |
+| **Buy on DEX** | 2–5% | 50% of fee | 50% of fee |
+| **Sell on DEX** | 2–5% | 50% of fee | 50% of fee |
 | **Sell to Vault (DApp)** | 0% | — | — |
 
 ---
 
-## Vault Tax
+## Dynamic Fee
 
-**1.5% of every DEX trade** is automatically routed to the Vault in ETH. This compounds with mining revenue to continuously grow the floor price.
+The swap fee ranges between **2% and 5%**, manually adjusted by the team based on trading activity and market conditions. Lower fees during quiet periods reduce friction and encourage volume. Higher fees during high demand periods accelerate Vault accumulation and team revenue for reinvestment into mining hardware.
 
-On a day with $10,000 of combined trading volume:
-```
-$10,000 × 1.5% = $150 → Vault
-```
-
-On Base chain, where gas costs are negligible, even small trades contribute meaningfully to the Vault without friction.
+The fee is set on-chain and visible to anyone at any time — there are no hidden adjustments.
 
 ---
 
-## Marketing Tax
+## Vault Fee (50%)
 
-**1.5% of every DEX trade** funds operations and marketing. This covers:
+Half of every swap fee flows directly into the Vault, continuously raising the ETH floor price for all $TROVE holders.
 
-- Smart contract development and maintenance
-- Security audits
-- Community management
-- Exchange listings
-- Mining infrastructure operational costs not covered by mining revenue
+Example at 4% fee on $10,000 daily volume:
+```
+$10,000 × 4% = $400 total fees
+$400 × 50% = $200 → Vault
+```
 
-The marketing wallet is publicly disclosed. The team commits to transparent reporting of how these funds are deployed.
+This compounds daily with mining revenue, creating a floor that rises faster the more the protocol is used.
+
+---
+
+## Team & Development Fee (50%)
+
+The other half funds operations and growth:
+
+- Smart contract development and audits
+- ASIC miner procurement and expansion
+- Solar panel and battery infrastructure
+- Marketing and community growth
+
+Crucially, a significant portion of team fee revenue is reinvested into **additional mining hardware** — which in turn generates more buyback pressure and Vault deposits. The team's revenue recycling back into the protocol is a core growth loop.
 
 ---
 
 ## Zero Tax on Vault Sales
 
-When selling $TROVE directly to the Vault via the DApp, **no tax is applied.** You receive the full floor price in ETH.
+Selling $TROVE directly to the Vault via the DApp incurs **zero fee**. You receive the full ETH floor price with nothing taken out.
 
-This is intentional. The Vault sale mechanism is a fundamental right of every $TROVE holder — it shouldn't be taxed. Sellers to the Vault are also permanently burning their tokens, which benefits all remaining holders, so there is no reason to penalize this action.
+Vault sales permanently burn the tokens sold, which benefits all remaining holders by raising the floor price. There's no reason to tax an action that helps everyone.
 
 ---
 
-## Why 3%?
+## Transparency
 
-EtherSafe, the inspiration for BaseTrove, used 3% (1.5/1.5). This rate is:
-
-- Low enough not to deter trading or create significant arb friction
-- High enough to generate meaningful Vault accumulation at scale
-- Familiar to DeFi users — not a surprise or a trap
-
-There are no hidden fees, no dynamic tax adjustments, and no owner function that can increase the tax rate post-launch. The 3% is written into the contract and cannot be changed.
+Every fee collection, Vault deposit, team transfer, and mining reinvestment is visible on-chain and tracked on the BaseTrove live dashboard. No black boxes.
