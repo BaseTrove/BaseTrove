@@ -10,6 +10,7 @@
 ## ⚙️ The Protocol
 * [🔄 How It Works](protocol/overview.md)
 * [🏦 The Vault](protocol/the-vault.md)
+* [⚡ The Acceleration Effect](protocol/acceleration.md)
 * [💧 Dual Liquidity Pools](protocol/dual-lp.md)
 * [⚖️ Arbitrage Engine](protocol/arbitrage.md)
 
