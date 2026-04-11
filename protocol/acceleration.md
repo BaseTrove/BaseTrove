@@ -56,17 +56,21 @@ In both cases, the floor goes up. The composition just differs.
 
 ## The Math in Action
 
-Starting from 1 ETH in the Vault, the same cycle repeats four times — adding 0.5 ETH and burning 200 TROVE:
+As daily buybacks gradually burn TROVE over many months, the supply shrinks. Here's what that does to the power of each new ETH deposit — the same 0.25 ETH mining deposit hitting the Vault at different stages of supply compression:
 
-| Cycle | Vault ETH | Supply | Floor | Gain vs. Start |
-|---|---|---|---|---|
-| Start | 1.0 | 1,000 | 0.001 ETH | — |
-| After 1 | 1.5 | 800 | 0.001875 ETH | +87.5% |
-| After 2 | 2.0 | 600 | 0.003333 ETH | +233% |
-| After 3 | 2.5 | 400 | 0.00625 ETH | +525% |
-| After 4 | 3.0 | 200 | 0.015 ETH | +1,400% |
+| Stage | Supply Remaining | Vault ETH | Same 0.25 ETH deposit raises floor by... |
+|---|---|---|---|
+| Launch | 1,000 | 0.50 | **+0.000250 ETH** per TROVE |
+| A few months in | 800 | 2.00 | **+0.000313 ETH** per TROVE |
+| Mid way | 600 | 3.50 | **+0.000417 ETH** per TROVE |
+| Later | 400 | 5.50 | **+0.000625 ETH** per TROVE |
+| Deep compression | 200 | 7.50 | **+0.001250 ETH** per TROVE |
 
-Same inputs. Exponentially larger output. Each burn permanently increases the leverage of every future ETH deposit.
+The same 0.25 ETH deposit is **5× more powerful** at 200 supply than at launch. The miners keep putting in the same revenue — it just hits harder every time a token gets burned.
+
+This is the acceleration. Not some overnight event — but the slow, compounding result of daily buybacks gradually shrinking the supply until every single deposit lands with significantly more force.
+
+Supply doesn't drop to 200 overnight. It gets there over months or years of continuous buybacks. The table just shows what each future deposit is worth once you arrive at that stage — and the floor level it's moving from is already much higher by then too.
 
 ---
 
