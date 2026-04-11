@@ -66,7 +66,7 @@ As often as mining revenue accumulates — typically daily or more. Base chain's
 
 ### Where can I trade $TROVE?
 
-On Uniswap v2 on Base via two pools: TROVE/USDC and TROVE/ETH. You can also sell directly to the Vault via the DApp at the floor price with zero fees.
+On the TROVE/ETH pool on Uniswap v2 on Base. Pool address published at launch. You can also sell directly to the Vault via the DApp at the guaranteed floor price with zero fees.
 
 ---
 

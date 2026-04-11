@@ -6,7 +6,7 @@
 
 **BaseTrove ($TROVE)** is a deflationary token on Base chain built around a self-sustaining economic engine. Unlike typical DeFi projects that rely solely on trading volume, BaseTrove is backed by **real-world solar ASIC miners** running 24/7 — generating perpetual revenue that flows directly into buybacks, burns, and the Vault.
 
-Every token that gets burned raises the ETH floor price for every remaining $TROVE in existence. Every buyback creates arbitrage between two liquidity pools, bringing more volume, more burns, and more ETH into the Vault. A flywheel that never stops spinning.
+Every token that gets burned raises the ETH floor price for every remaining $TROVE in existence. Every buyback brings more volume, more burns, and more ETH into the Vault. A flywheel that never stops spinning.
 
 ---
 
@@ -20,7 +20,7 @@ Every token that gets burned raises the ETH floor price for every remaining $TRO
 | **Launch** | 100% Fair Launch — no team tokens |
 | **DEX** | Uniswap v2 on Base |
 | **Vault Asset** | ETH |
-| **Liquidity Pools** | TROVE/USDC · TROVE/ETH |
+| **Liquidity Pool** | TROVE/ETH (Uniswap v2) |
 | **Swap Fee** | 2–5% (dynamic) |
 | **Buyback Engine** | Solar ASIC Miners (24/7) |
 | **Burns** | Permanent — tokens burned are gone forever |

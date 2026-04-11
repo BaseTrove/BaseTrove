@@ -8,8 +8,7 @@ $TROVE is a 100% fair launch. No private sales. No team allocation. No VC bags. 
 
 | Allocation | Percentage | TROVE | Notes |
 |---|---|---|---|
-| **TROVE/USDC Pool** | 50% | 500 | Uniswap v2 on Base |
-| **TROVE/ETH Pool** | 50% | 500 | Uniswap v2 on Base |
+| **TROVE/ETH Pool** | 100% | 1,000 | Uniswap v2 on Base |
 
 That's it. 1,000 TROVE. 100% in liquidity. Nothing held back.
 
@@ -17,10 +16,7 @@ That's it. 1,000 TROVE. 100% in liquidity. Nothing held back.
 
 ## Initial Liquidity
 
-Both pools are seeded simultaneously at launch on **Uniswap v2 on Base**:
-
-- **Pool A:** 500 TROVE + USDC
-- **Pool B:** 500 TROVE + ETH
+All 1,000 TROVE are paired with ETH and launched publicly on **Uniswap v2 on Base** as a single TROVE/ETH pool.
 
 Liquidity is **locked** at launch via a third-party locker. The community can verify the lock on-chain at any time.
 
@@ -28,11 +24,19 @@ The first buyer on the open market gets the exact same price as everyone else. N
 
 ---
 
+## Why a Single ETH Pool?
+
+One deep pool concentrates all liquidity in one place — tighter spreads, better price discovery, and more efficient volume. Splitting liquidity across multiple pairs dilutes depth and creates unnecessary complexity.
+
+TROVE/ETH also aligns naturally with the Vault, which holds ETH. The DEX price and the floor price speak the same language.
+
+---
+
 ## No Team Tokens
 
 The team holds zero $TROVE at launch. Revenue for development, smart contract maintenance, mining infrastructure, and operations comes entirely from the **team's share of swap fees** — not from a pre-allocated token bag.
 
-This means the team's financial interests are identical to every holder: the protocol needs to generate volume and grow the Vault. There is no team dump waiting to happen.
+The team's financial interests are identical to every holder: the protocol needs volume and Vault growth. There is no team dump waiting to happen.
 
 ---
 
@@ -46,4 +50,4 @@ This means the team's financial interests are identical to every holder: the pro
 - Solar panel and battery infrastructure
 - Community and marketing
 
-As the protocol grows and generates more fee revenue, more gets reinvested into additional mining hardware — increasing the buyback pressure on $TROVE and growing the Vault faster.
+As the protocol grows, more fee revenue gets reinvested into additional mining hardware — increasing buyback pressure and growing the Vault faster.
