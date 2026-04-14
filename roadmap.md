@@ -10,7 +10,7 @@
 - [ ] Proof-of-concept ASIC miner deployed and running
 - [ ] Community channels launched (Telegram, X/Twitter)
 - [ ] Documentation published
-- [ ] 100% fair launch — TROVE/USDC and TROVE/ETH pools seeded on Uniswap v2
+- [ ] 100% fair launch — TROVE/ETH pool seeded on Uniswap v2
 - [ ] Liquidity locked (third-party locker)
 - [ ] Buyback wallet publicly disclosed
 - [ ] Live dashboard goes live — all TXs visible (buybacks, vault injections, burns)

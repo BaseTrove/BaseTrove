@@ -72,7 +72,7 @@ Found a vulnerability? Contact us privately before going public:
 | Smart contract bug | Independent audit, conservative architecture |
 | Mining hardware failure | Redundant units, battery backup for 24/7 uptime |
 | Mining coin price decline | Profit-switching to most profitable algorithm at all times |
-| Liquidity thin periods | Vault floor provides hard support; arb bots keep pools active |
+| Liquidity thin periods | Vault floor provides hard support; floor arb keeps price anchored |
 | Fee set too high | Team incentivized to keep fees reasonable — high fees kill volume and team revenue |
 | Regulatory | Operating in compliant jurisdictions; legal review of token structure |
 

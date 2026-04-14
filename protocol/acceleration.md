@@ -152,7 +152,7 @@ This is the core compounding effect. The system does not plateau. It accelerates
 
 **Not included** (real results likely better):
 - Swap fee revenue to Vault
-- Arbitrage bot volume generating additional fees
+- Floor arbitrage volume (traders buying DEX dips to sell to Vault)
 - BTC/ZEC/ETC price appreciation
 - Community-driven volume
 

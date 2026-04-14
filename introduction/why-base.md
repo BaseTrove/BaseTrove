@@ -29,10 +29,10 @@ Base also benefits from Coinbase's enormous distribution. As one of the most wid
 
 ## Deep, Native Liquidity
 
-Base hosts deep, battle-tested DEX infrastructure including Uniswap v3 and Aerodrome Finance — the protocols where $TROVE's two liquidity pools live. This means:
+Base hosts deep, battle-tested DEX infrastructure. Uniswap v2 on Base is where $TROVE's liquidity lives. This means:
 
-- Tight spreads for arbitrage bots
-- Reliable price discovery
+- Tight spreads and reliable price discovery
+- Deep ETH liquidity paired directly with TROVE
 - No need to seed liquidity on an obscure chain with thin volume
 
 ---

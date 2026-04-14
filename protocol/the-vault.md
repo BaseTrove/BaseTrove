@@ -43,7 +43,7 @@ The same ETH deposit that moved the floor 10% at 1,000 supply moves it **further
 |---|---|
 | **Mining Revenue (50%)** | Half of all ASIC miner earnings, deposited on every cycle |
 | **Swap Fee (50% of 2–5%)** | Half of every DEX trade fee, flowing in continuously |
-| **Arb Bot Volume** | Every arbitrage trade between the two pools generates fees → Vault |
+| **Floor Arbitrage** | Traders buying cheap on DEX to sell to Vault generate swap fees → Vault |
 
 The Vault never pays salaries, operations, or marketing. It exists solely to back $TROVE holders.
 
