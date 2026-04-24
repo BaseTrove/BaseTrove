@@ -8,7 +8,7 @@
 - [ ] Security audit by independent firm
 - [ ] DApp development (Vault interface + live transparency dashboard)
 - [ ] Proof-of-concept ASIC miner deployed and running
-- [ ] Community channels launched (Telegram, X/Twitter)
+- [ ] Community channels live — [t.me/BaseTrove](https://t.me/BaseTrove) · [x.com/BaseTrove](https://x.com/BaseTrove)
 - [ ] Documentation published
 - [ ] 100% fair launch — TROVE/ETH pool seeded on Uniswap v2
 - [ ] Liquidity locked (third-party locker)
@@ -36,4 +36,4 @@
 
 ---
 
-> Dates are intentionally omitted. We ship when it's ready. Progress updates communicated regularly in community channels.
+> Dates are intentionally omitted. We ship when it's ready. Follow progress on [Telegram](https://t.me/BaseTrove) and [X](https://x.com/BaseTrove).

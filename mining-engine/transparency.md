@@ -57,7 +57,7 @@ The team commits to providing:
 - Photos and specs of the physical mining hardware
 - Panel/battery array documentation
 - Hash rate reporting (verifiable against pool dashboard)
-- Regular operational updates in the community channels
+- Regular operational updates on [Telegram](https://t.me/BaseTrove) and [X](https://x.com/BaseTrove)
 
 We will never claim mining revenue we can't demonstrate on-chain.
 

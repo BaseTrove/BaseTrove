@@ -59,4 +59,17 @@ This number can only go up.
 
 ---
 
+---
+
+## Community
+
+| | |
+|---|---|
+| 🌐 **Website** | [basetrove.net](https://basetrove.net) |
+| 📖 **Docs** | [docs.basetrove.net](https://docs.basetrove.net) |
+| 💬 **Telegram** | [t.me/BaseTrove](https://t.me/BaseTrove) |
+| 🐦 **Twitter/X** | [x.com/BaseTrove](https://x.com/BaseTrove) |
+
+---
+
 > Ready to understand the full picture? Start with [The Vision](introduction/the-vision.md).

@@ -6,7 +6,7 @@ The BaseTrove DApp is your direct interface with the Vault. Sell $TROVE at the g
 
 ## Accessing the DApp
 
-> **URL:** [basetrove.io/dapp](https://basetrove.io/dapp) *(published at launch)*
+> **URL:** [basetrove.net/dapp](https://basetrove.net/dapp) *(live at launch)*
 
 Runs directly in your browser. No downloads, no installs.
 
@@ -68,5 +68,9 @@ Live on-chain stats — no backend, no manipulation:
 To buy $TROVE on the open market:
 
 - **TROVE/ETH on Uniswap v2:** *(link published at launch)*
+- **Website:** [basetrove.net](https://basetrove.net)
+- **Docs:** [docs.basetrove.net](https://docs.basetrove.net)
+- **Telegram:** [t.me/BaseTrove](https://t.me/BaseTrove)
+- **Twitter/X:** [x.com/BaseTrove](https://x.com/BaseTrove)
 
 DEX trades incur the current swap fee (2–5%), split 50% to Vault and 50% to team development.

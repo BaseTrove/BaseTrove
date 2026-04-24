@@ -18,7 +18,7 @@ An audit reduces risk — it does not eliminate it. Never invest more than you c
 |---|---|
 | **TROVE Token** | ERC-20 with dynamic 2–5% DEX fee routing |
 | **Vault** | Holds ETH, calculates floor price, processes burns |
-| **Buyback Engine** | Receives mining revenue, splits 50/50, executes random LP buys |
+| **Buyback Engine** | Receives mining revenue, splits 50/50, executes LP buybacks |
 
 All contracts are verified and open-source on Basescan.
 
@@ -45,7 +45,7 @@ The Vault and its ETH are untouchable by anyone, including the team.
 
 ## Liquidity Lock
 
-Both Uniswap v2 pools are locked via a third-party locker for a minimum of **12 months** from launch. Verifiable on-chain.
+The TROVE/ETH Uniswap v2 pool is locked via a third-party locker for a minimum of **12 months** from launch. Verifiable on-chain.
 
 > Lock proof: **[Published at launch]**
 
@@ -61,7 +61,18 @@ There are no team tokens to lock, vest, or dump. Zero. The team's only financial
 
 Found a vulnerability? Contact us privately before going public:
 
-> Security contact: **[Published at launch]**
+> **Telegram:** [t.me/BaseTrove](https://t.me/BaseTrove)
+
+---
+
+## Community & Links
+
+| | |
+|---|---|
+| **Website** | [basetrove.net](https://basetrove.net) |
+| **Docs** | [docs.basetrove.net](https://docs.basetrove.net) |
+| **Telegram** | [t.me/BaseTrove](https://t.me/BaseTrove) |
+| **Twitter/X** | [x.com/BaseTrove](https://x.com/BaseTrove) |
 
 ---
 
