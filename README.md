@@ -16,7 +16,7 @@ Every token that gets burned raises the ETH floor price for every remaining $TRO
 |---|---|
 | **Token** | $TROVE |
 | **Chain** | Base (Ethereum L2) |
-| **Total Supply** | 1,000 TROVE |
+| **Total Supply** | 100,000 TROVE |
 | **Launch** | 100% Fair Launch — no team tokens |
 | **DEX** | Uniswap v2 on Base |
 | **Vault Asset** | ETH |

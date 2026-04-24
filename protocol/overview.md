@@ -75,6 +75,6 @@ BaseTrove's floor price is powered by multiple independent revenue streams:
 | Vault Sales | Burns supply → floor rises, ETH paid out |
 | Future Tech | Additional revenue streams added to the same flywheel over time |
 
-Any one of these alone would be a reasonable deflationary mechanic. Together, compounding on a supply of 1,000 tokens, they create an accelerating system where the floor price rising is not a goal — it's a mathematical certainty.
+Any one of these alone would be a reasonable deflationary mechanic. Together, compounding on a supply of 100,000 tokens, they create an accelerating system where the floor price rising is not a goal — it's a mathematical certainty.
 
 > Deep dive: [The Vault](the-vault.md) · [The Acceleration Effect](acceleration.md) · [Arbitrage](arbitrage.md)

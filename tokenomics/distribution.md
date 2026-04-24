@@ -8,15 +8,15 @@ $TROVE is a 100% fair launch. No private sales. No team allocation. No VC bags. 
 
 | Allocation | Percentage | TROVE | Notes |
 |---|---|---|---|
-| **TROVE/ETH Pool** | 100% | 1,000 | Uniswap v2 on Base |
+| **TROVE/ETH Pool** | 100% | 100,000 | Uniswap v2 on Base |
 
-That's it. 1,000 TROVE. 100% in liquidity. Nothing held back.
+That's it. 100,000 TROVE. 100% in liquidity. Nothing held back.
 
 ---
 
 ## Initial Liquidity
 
-All 1,000 TROVE are paired with ETH and launched publicly on **Uniswap v2 on Base** as a single TROVE/ETH pool.
+All 100,000 TROVE are paired with ETH and launched publicly on **Uniswap v2 on Base** as a single TROVE/ETH pool.
 
 Liquidity is **locked** at launch via a third-party locker. The community can verify the lock on-chain at any time.
 

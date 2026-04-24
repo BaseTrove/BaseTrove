@@ -24,14 +24,14 @@ Every burn reduces the number of tokens that need to divide the ETH in the Vault
 
 | Event | Vault ETH | Supply | Floor |
 |---|---|---|---|
-| Start | 1 ETH | 1,000 | 0.001 ETH |
-| +0.1 ETH deposited | 1.1 ETH | 1,000 | 0.0011 ETH (+10%) |
-| 100 TROVE burned | 1.1 ETH | 900 | 0.00122 ETH (+11%) |
-| +0.1 ETH deposited | 1.2 ETH | 900 | 0.00133 ETH (+9%) |
-| 100 TROVE burned | 1.2 ETH | 800 | 0.0015 ETH (+12.7%) |
-| +0.1 ETH deposited | 1.3 ETH | 800 | 0.001625 ETH (+8.3%) |
+| Start | 1 ETH | 100,000 | 0.00001 ETH |
+| +0.1 ETH deposited | 1.1 ETH | 100,000 | 0.000011 ETH (+10%) |
+| 10,000 TROVE burned | 1.1 ETH | 90,000 | 0.0000122 ETH (+11%) |
+| +0.1 ETH deposited | 1.2 ETH | 90,000 | 0.0000133 ETH (+9%) |
+| 10,000 TROVE burned | 1.2 ETH | 80,000 | 0.000015 ETH (+12.7%) |
+| +0.1 ETH deposited | 1.3 ETH | 80,000 | 0.00001625 ETH (+8.3%) |
 
-The same ETH deposit that moved the floor 10% at 1,000 supply moves it **further** at 800 supply — and further still at 500, 300, 100. As the supply compresses, every new ETH deposit hits harder. Every burn makes the next burn more powerful.
+The same ETH deposit that moved the floor 10% at 100,000 supply moves it **further** at 80,000 supply — and further still at 50,000, 30,000, 10,000. As the supply compresses, every new ETH deposit hits harder. Every burn makes the next burn more powerful.
 
 **The Vault loads up faster the more tokens get burned.**
 

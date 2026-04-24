@@ -18,9 +18,9 @@ Two things happen simultaneously and continuously:
 
 Here's the key insight: **as supply shrinks, the same ETH deposit moves the floor further.**
 
-At 1,000 supply, depositing 0.1 ETH moves the floor 10%.
-At 500 supply, the same 0.1 ETH moves it 20%.
-At 200 supply, that same 0.1 ETH moves it 50%.
+At 100,000 supply, depositing 0.1 ETH moves the floor 10%.
+At 50,000 supply, the same 0.1 ETH moves it 20%.
+At 20,000 supply, that same 0.1 ETH moves it 50%.
 
 The denominator shrinks. Every deposit hits harder. Every burn makes the next deposit more powerful.
 
@@ -60,17 +60,17 @@ As daily buybacks gradually burn TROVE over many months, the supply shrinks. Her
 
 | Stage | Supply Remaining | Vault ETH | Same 0.25 ETH deposit raises floor by... |
 |---|---|---|---|
-| Launch | 1,000 | 0.50 | **+0.000250 ETH** per TROVE |
-| A few months in | 800 | 2.00 | **+0.000313 ETH** per TROVE |
-| Mid way | 600 | 3.50 | **+0.000417 ETH** per TROVE |
-| Later | 400 | 5.50 | **+0.000625 ETH** per TROVE |
-| Deep compression | 200 | 7.50 | **+0.001250 ETH** per TROVE |
+| Launch | 100,000 | 0.50 | **+0.0000025 ETH** per TROVE |
+| A few months in | 80,000 | 2.00 | **+0.0000031 ETH** per TROVE |
+| Mid way | 60,000 | 3.50 | **+0.0000042 ETH** per TROVE |
+| Later | 40,000 | 5.50 | **+0.0000063 ETH** per TROVE |
+| Deep compression | 20,000 | 7.50 | **+0.0000125 ETH** per TROVE |
 
-The same 0.25 ETH deposit is **5× more powerful** at 200 supply than at launch. The miners keep putting in the same revenue — it just hits harder every time a token gets burned.
+The same 0.25 ETH deposit is **5× more powerful** at 20,000 supply than at launch. The miners keep putting in the same revenue — it just hits harder every time a token gets burned.
 
 This is the acceleration. Not some overnight event — but the slow, compounding result of daily buybacks gradually shrinking the supply until every single deposit lands with significantly more force.
 
-Supply doesn't drop to 200 overnight. It gets there over months or years of continuous buybacks. The table just shows what each future deposit is worth once you arrive at that stage — and the floor level it's moving from is already much higher by then too.
+Supply doesn't drop to 20,000 overnight. It gets there over months or years of continuous buybacks. The table just shows what each future deposit is worth once you arrive at that stage — and the floor level it's moving from is already much higher by then too.
 
 ---
 
@@ -82,21 +82,21 @@ The table below models the floor price over 12 months. Two scenarios are shown s
 
 | Month | ETH to Vault | TROVE Burned | Vault ETH | Supply | Floor |
 |---|---|---|---|---|---|
-| 0 — Launch | 0.50 seed | — | 0.50 | 1,000 | 0.000500 ETH |
-| 1 | +0.25 | 55 | 0.75 | 945 | 0.000794 ETH |
-| 2 | +0.25 | 48 | 1.00 | 897 | 0.001115 ETH |
-| 3 | +0.30 | 42 | 1.30 | 855 | 0.001520 ETH |
-| 4 | +0.35 | 36 | 1.65 | 819 | 0.002015 ETH |
-| 5 | +0.35 | 30 | 2.00 | 789 | 0.002535 ETH |
-| 6 | +0.40 | 25 | 2.40 | 764 | 0.003141 ETH |
-| 7 | +0.45 | 22 | 2.85 | 742 | 0.003841 ETH |
-| 8 | +0.50 | 20 | 3.35 | 722 | 0.004640 ETH |
-| 9 | +0.55 | 18 | 3.90 | 704 | 0.005540 ETH |
-| 10 | +0.60 | 16 | 4.50 | 688 | 0.006540 ETH |
-| 11 | +0.65 | 14 | 5.15 | 674 | 0.007642 ETH |
-| 12 | +0.70 | 12 | 5.85 | 662 | 0.008836 ETH |
+| 0 — Launch | 0.50 seed | — | 0.50 | 100,000 | 0.0000050 ETH |
+| 1 | +0.25 | 5,500 | 0.75 | 94,500 | 0.0000079 ETH |
+| 2 | +0.25 | 4,800 | 1.00 | 89,700 | 0.0000112 ETH |
+| 3 | +0.30 | 4,200 | 1.30 | 85,500 | 0.0000152 ETH |
+| 4 | +0.35 | 3,600 | 1.65 | 81,900 | 0.0000201 ETH |
+| 5 | +0.35 | 3,000 | 2.00 | 78,900 | 0.0000254 ETH |
+| 6 | +0.40 | 2,500 | 2.40 | 76,400 | 0.0000314 ETH |
+| 7 | +0.45 | 2,200 | 2.85 | 74,200 | 0.0000384 ETH |
+| 8 | +0.50 | 2,000 | 3.35 | 72,200 | 0.0000464 ETH |
+| 9 | +0.55 | 1,800 | 3.90 | 70,400 | 0.0000554 ETH |
+| 10 | +0.60 | 1,600 | 4.50 | 68,800 | 0.0000654 ETH |
+| 11 | +0.65 | 1,400 | 5.15 | 67,400 | 0.0000764 ETH |
+| 12 | +0.70 | 1,200 | 5.85 | 66,200 | 0.0000884 ETH |
 
-**Floor after 12 months: 0.00884 ETH → +1,667% from launch**
+**Floor after 12 months: 0.0000884 ETH → +1,667% from launch**
 
 ---
 
@@ -104,21 +104,21 @@ The table below models the floor price over 12 months. Two scenarios are shown s
 
 | Month | ETH to Vault | TROVE Burned | Vault ETH | Supply | Floor |
 |---|---|---|---|---|---|
-| 0 — Launch | 0.50 seed | — | 0.50 | 1,000 | 0.000500 ETH |
-| 1 | +0.25 | 11 | 0.75 | 989 | 0.000758 ETH |
-| 2 | +0.25 | 10 | 1.00 | 979 | 0.001021 ETH |
-| 3 | +0.30 | 9 | 1.30 | 970 | 0.001340 ETH |
-| 4 | +0.35 | 8 | 1.65 | 962 | 0.001715 ETH |
-| 5 | +0.35 | 6 | 2.00 | 956 | 0.002092 ETH |
-| 6 | +0.40 | 6 | 2.40 | 950 | 0.002526 ETH |
-| 7 | +0.45 | 5 | 2.85 | 945 | 0.003016 ETH |
-| 8 | +0.50 | 5 | 3.35 | 940 | 0.003564 ETH |
-| 9 | +0.55 | 4 | 3.90 | 936 | 0.004167 ETH |
-| 10 | +0.60 | 4 | 4.50 | 932 | 0.004828 ETH |
-| 11 | +0.65 | 4 | 5.15 | 928 | 0.005550 ETH |
-| 12 | +0.70 | 3 | 5.85 | 925 | 0.006324 ETH |
+| 0 — Launch | 0.50 seed | — | 0.50 | 100,000 | 0.0000050 ETH |
+| 1 | +0.25 | 1,100 | 0.75 | 98,900 | 0.0000076 ETH |
+| 2 | +0.25 | 1,000 | 1.00 | 97,900 | 0.0000102 ETH |
+| 3 | +0.30 | 900 | 1.30 | 97,000 | 0.0000134 ETH |
+| 4 | +0.35 | 800 | 1.65 | 96,200 | 0.0000172 ETH |
+| 5 | +0.35 | 600 | 2.00 | 95,600 | 0.0000209 ETH |
+| 6 | +0.40 | 600 | 2.40 | 95,000 | 0.0000253 ETH |
+| 7 | +0.45 | 500 | 2.85 | 94,500 | 0.0000302 ETH |
+| 8 | +0.50 | 500 | 3.35 | 94,000 | 0.0000356 ETH |
+| 9 | +0.55 | 400 | 3.90 | 93,600 | 0.0000417 ETH |
+| 10 | +0.60 | 400 | 4.50 | 93,200 | 0.0000483 ETH |
+| 11 | +0.65 | 400 | 5.15 | 92,800 | 0.0000555 ETH |
+| 12 | +0.70 | 300 | 5.85 | 92,500 | 0.0000632 ETH |
 
-**Floor after 12 months: 0.00632 ETH → +1,165% from launch**
+**Floor after 12 months: 0.0000632 ETH → +1,165% from launch**
 
 ---
 
@@ -136,7 +136,7 @@ In practice, both forces operate together. When market price runs far above floo
 
 ## The Monthly Gain Acceleration
 
-In Scenario A, the absolute monthly floor gain accelerates from **+0.000294 ETH** in month 1 to **+0.001194 ETH** in month 12 — **4× faster** in absolute terms, driven by the shrinking supply multiplying each ETH deposit.
+In Scenario A, the absolute monthly floor gain accelerates from **+0.0000029 ETH** in month 1 to **+0.0000120 ETH** in month 12 — **4× faster** in absolute terms, driven by the shrinking supply multiplying each ETH deposit.
 
 This is the core compounding effect. The system does not plateau. It accelerates as it runs.
 
