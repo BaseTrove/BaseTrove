@@ -47,7 +47,7 @@ The Vault and its ETH are untouchable by anyone, including the team.
 
 The TROVE/ETH Uniswap v2 pool is locked via a third-party locker for a minimum of **12 months** from launch. Verifiable on-chain.
 
-> Lock proof: **[Published at launch]**
+> Lock proof: [View on UNCX](https://app.uncx.network/lockers/univ2/chain/8453/address/0x7eb0d66652f8e6e94b9ddf989642312c6333c7b8/lock/1521)
 
 ---
 

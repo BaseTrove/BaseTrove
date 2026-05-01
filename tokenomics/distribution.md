@@ -18,7 +18,7 @@ That's it. 100,000 TROVE. 100% in liquidity. Nothing held back.
 
 All 100,000 TROVE are paired with ETH and launched publicly on **Uniswap v2 on Base** as a single TROVE/ETH pool.
 
-Liquidity is **locked** at launch via a third-party locker. The community can verify the lock on-chain at any time.
+Liquidity is **locked** via [UNCX Network](https://app.uncx.network/lockers/univ2/chain/8453/address/0x7eb0d66652f8e6e94b9ddf989642312c6333c7b8/lock/1521). Verifiable on-chain at any time.
 
 The first buyer on the open market gets the exact same price as everyone else. No whitelist, no presale advantage, no insider allocation.
 

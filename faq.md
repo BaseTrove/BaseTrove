@@ -66,7 +66,7 @@ As often as mining revenue accumulates — typically daily or more. Base chain's
 
 ### Where can I trade $TROVE?
 
-On the TROVE/ETH pool on Uniswap v2 on Base. Pool address published at launch. You can also sell directly to the Vault via the DApp at the guaranteed floor price with zero fees.
+On the TROVE/ETH pool on Uniswap v2 on Base. Contract: [`0x07Ade66a57B1d512eCF6138477eEDd4283b1E24A`](https://basescan.org/token/0x07Ade66a57B1d512eCF6138477eEDd4283b1E24A). You can also sell directly to the Vault via the DApp at the guaranteed floor price with zero fees.
 
 ---
 
