@@ -41,7 +41,7 @@ The same ETH deposit that moved the floor 10% at 100,000 supply moves it **furth
 
 | Source | Description |
 |---|---|
-| **Mining Revenue (50%)** | Half of all ASIC miner earnings, deposited on every cycle |
+| **Mining Revenue (dynamic)** | ASIC miner earnings directed to the Vault when market price is at a premium; redirected to buybacks when price approaches the floor |
 | **Swap Fee (50% of 2–5%)** | Half of every DEX trade fee, flowing in continuously |
 | **Floor Arbitrage** | Traders buying cheap on DEX to sell to Vault generate swap fees → Vault |
 

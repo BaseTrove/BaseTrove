@@ -31,10 +31,11 @@ Every token that gets burned raises the ETH floor price for every remaining $TRO
 ## Core Loop
 
 ```
-Solar Miners → Revenue
+Solar Miners → Revenue (ETH)
         ↓
-  50% → Vault (ETH accumulates)
-  50% → Buyback $TROVE from LP → Burn
+  Allocated dynamically based on market conditions:
+  → Vault (ETH accumulates — floor rises)
+  → Buyback $TROVE from LP → Burn (when price near floor)
         ↓
   Circulating supply decreases
   Vault ETH per token increases

@@ -23,10 +23,10 @@ The fewer tokens remain, the faster each new ETH deposit moves the floor. **The 
 
 ### 2. The Mining Engine
 
-Solar-powered ASIC miners run 24/7, profit-switching between Bitcoin, Zcash, Ethereum Classic, and other Proof-of-Work coins to always maximize revenue. All earnings convert to ETH on Base and split:
+Solar-powered ASIC miners run 24/7, profit-switching between Bitcoin, Zcash, Ethereum Classic, and other Proof-of-Work coins to always maximize revenue. All earnings convert to ETH on Base and are deployed dynamically:
 
-- **50% → Vault** — floor rises immediately
-- **50% → Buyback** — TROVE bought from the TROVE/ETH pool and burned forever
+- **→ Vault** — when market price trades at a significant premium to floor, revenue fills the Vault, growing the ETH reserve
+- **→ Buyback & Burn** — when market price approaches the floor, revenue buys TROVE from the TROVE/ETH pool and burns it permanently, as buybacks are most efficient at low premiums
 
 This happens regardless of market conditions. No trading volume required. The floor rises and supply shrinks even in a bear market, even on days with zero community activity.
 
@@ -41,11 +41,11 @@ This happens regardless of market conditions. No trading volume required. The fl
       ↓
    Convert to ETH on Base
       ↓
-   ┌─────────────────────────┐
-  50%                       50%
-   ↓                         ↓
-🏦 Vault               🔥 Buyback from TROVE/ETH pool
-   (ETH up)                (TROVE burned)
+   ┌──────────────────────────────────────┐
+  Dynamic allocation (market-dependent)
+   ↓                                    ↓
+🏦 Vault (high premium)     🔥 Buyback & Burn (near floor)
+   (ETH up)                    (TROVE burned)
       ↓                         ↓
   Floor rises            Supply shrinks
       ↓                         ↓
@@ -69,11 +69,14 @@ BaseTrove's floor price is powered by multiple independent revenue streams:
 
 | Utility | What it does |
 |---|---|
-| ASIC Mining | Buybacks + Vault deposits, 24/7, market-independent |
-| Swap Fees | 50% to Vault on every TROVE/ETH trade |
+| ASIC Mining | Revenue to Vault or buybacks dynamically, 24/7, market-independent |
+| Swap Fees | Portion of every TROVE/ETH DEX trade flows to Vault |
 | Floor Arbitrage | DEX price dips near floor → rational buyers step in, burn supply |
 | Vault Sales | Burns supply → floor rises, ETH paid out |
-| Future Tech | Additional revenue streams added to the same flywheel over time |
+| Trading Bots | Protocol-run bots generating revenue directed to Vault |
+| Partnerships | Revenue-sharing with Base ecosystem projects |
+| Games & Apps | Onchain products where fees flow back to Vault |
+| Warehouse Scale | Long-term: dedicated mining facility for maximum continuous output |
 
 Any one of these alone would be a reasonable deflationary mechanic. Together, compounding on a supply of 100,000 tokens, they create an accelerating system where the floor price rising is not a goal — it's a mathematical certainty.
 
