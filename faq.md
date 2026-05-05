@@ -36,7 +36,7 @@ The miners produce whichever Proof-of-Work coin is most profitable at any given 
 
 ### How do I know the miners are actually running?
 
-The buyback wallet is public. You can watch mining revenue arrive, get converted to ETH on Base, and get split between the Vault and buybacks — all verifiable on-chain. The live dashboard also shows hash rate, daily revenue, and every transaction. No trust required.
+The mining dashboard is live at [miner.basetrove.net](https://miner.basetrove.net/) — showing hash rate, daily revenue, wallet balances, and every transaction in real time. The buyback wallet is also public: you can watch mining revenue arrive, get converted to ETH on Base, and get deployed to the Vault or buybacks — all verifiable on-chain. No trust required.
 
 ---
 

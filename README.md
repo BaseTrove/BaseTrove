@@ -69,6 +69,7 @@ This number can only go up.
 |---|---|
 | 🌐 **Website** | [basetrove.net](https://basetrove.net) |
 | 📖 **Docs** | [docs.basetrove.net](https://docs.basetrove.net) |
+| ⛏️ **Mining Dashboard** | [miner.basetrove.net](https://miner.basetrove.net) |
 | 💬 **Telegram** | [t.me/BaseTrove](https://t.me/BaseTrove) |
 | 🐦 **Twitter/X** | [x.com/BaseTrove](https://x.com/BaseTrove) |
 

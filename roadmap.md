@@ -13,7 +13,7 @@
 - [ ] 100% fair launch — TROVE/ETH pool seeded on Uniswap v2
 - [ ] Liquidity locked (third-party locker)
 - [ ] Buyback wallet publicly disclosed
-- [ ] Live dashboard goes live — all TXs visible (buybacks, vault injections, burns)
+- [x] Live mining dashboard — [miner.basetrove.net](https://miner.basetrove.net) (buybacks, vault injections, burns, hash rate)
 - [ ] Contract audit report published
 - [ ] Mining revenue begins flowing (first buybacks + Vault deposits)
 

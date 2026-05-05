@@ -36,7 +36,7 @@ No spreadsheet, no blog post, no Discord announcement is needed. The data lives 
 
 ## Live Dashboard
 
-The BaseTrove DApp includes a **live statistics dashboard** displaying:
+The mining dashboard is live at **[miner.basetrove.net](https://miner.basetrove.net/)** and displays real-time data on the mining operation:
 
 - Current Vault ETH balance
 - Current $TROVE floor price
