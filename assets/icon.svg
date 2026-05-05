@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!--
+    Diamond: T(16,1)  R(31,16)  B(16,31)  L(1,16)
+    Edge mids: TL(8.5,8.5)  TR(23.5,8.5)  BR(23.5,23.5)  BL(8.5,23.5)
+    Center: C(16,16)
+  -->
+
+  <!-- Top-left  → dark indigo blue -->
+  <polygon points="16,16 8.5,8.5 16,1"     fill="#0d2d8a"/>
+  <!-- Top-right  → bright cyan (light-face highlight) -->
+  <polygon points="16,16 16,1 23.5,8.5"    fill="#00cef5"/>
+  <!-- Right-upper → medium bright blue -->
+  <polygon points="16,16 23.5,8.5 31,16"   fill="#1278e8"/>
+  <!-- Right-lower → medium-dark blue -->
+  <polygon points="16,16 31,16 23.5,23.5"  fill="#0848b8"/>
+  <!-- Bottom-right → very dark navy -->
+  <polygon points="16,16 23.5,23.5 16,31"  fill="#040e58"/>
+  <!-- Bottom-left  → dark navy -->
+  <polygon points="16,16 16,31 8.5,23.5"   fill="#050f68"/>
+  <!-- Left-lower  → dark teal-blue -->
+  <polygon points="16,16 8.5,23.5 1,16"    fill="#093390"/>
+  <!-- Left-upper  → medium blue -->
+  <polygon points="16,16 1,16 8.5,8.5"     fill="#1562cc"/>
+
+  <!-- Crisp inner-edge highlights between facets (gives gem depth) -->
+  <line x1="16"  y1="1"   x2="23.5" y2="8.5"  stroke="rgba(255,255,255,0.55)" stroke-width="0.5"/>
+  <line x1="16"  y1="1"   x2="8.5"  y2="8.5"  stroke="rgba(160,210,255,0.30)" stroke-width="0.4"/>
+  <line x1="1"   y1="16"  x2="8.5"  y2="8.5"  stroke="rgba(160,215,255,0.25)" stroke-width="0.4"/>
+  <line x1="1"   y1="16"  x2="8.5"  y2="23.5" stroke="rgba(0,0,0,0.12)"       stroke-width="0.3"/>
+  <line x1="31"  y1="16"  x2="23.5" y2="8.5"  stroke="rgba(255,255,255,0.20)" stroke-width="0.3"/>
+  <line x1="31"  y1="16"  x2="23.5" y2="23.5" stroke="rgba(0,0,0,0.15)"       stroke-width="0.3"/>
+  <line x1="16"  y1="31"  x2="8.5"  y2="23.5" stroke="rgba(0,0,0,0.10)"       stroke-width="0.3"/>
+  <line x1="16"  y1="31"  x2="23.5" y2="23.5" stroke="rgba(0,0,0,0.10)"       stroke-width="0.3"/>
+
+  <!-- Keyhole — white circle + tapered slot -->
+  <circle  cx="16" cy="13.5" r="3.3" fill="white"/>
+  <polygon points="13.8,15.8 18.2,15.8 17.3,21.2 14.7,21.2" fill="white"/>
+</svg>
